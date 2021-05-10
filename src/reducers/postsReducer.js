@@ -1,4 +1,4 @@
-export default (oldPosts = [], action) => {
+var postsReducer = (oldPosts = [], action) => {
   switch (action.type) {
     case "FETCH_POSTS":
       return action.payload;
@@ -6,3 +6,5 @@ export default (oldPosts = [], action) => {
       return oldPosts;
   }
 };
+
+export default postsReducer;
